@@ -26,7 +26,7 @@ function getForecast(e) {
     const uriEncodedCity = encodeURIComponent(city);
 
     fetch(`https://community-open-weather-map.p.rapidapi.com/weather?units=${unit}&q=${uriEncodedCity}`, {
-        "method": "GET",
+        "method": "no-cors",
         "headers": {
             "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
             "x-rapidapi-key": process.env.cd65a868735ea57e8819f8c991a52d2b
